@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>VsroPlus Pricing</title>
+		<meta name="description" content="...">
+
+		<meta name="viewport" content="width=device-width, maximum-scale=5, initial-scale=1">
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- up to 10% speed up for external res -->
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/">
+		<!-- preloading icon font is helping to speed up a little bit -->
+		<link rel="preload" href="../assets/fonts/flaticon/Flaticon.woff2" as="font" type="font/woff2" crossorigin>
+
+		<link rel="stylesheet" href="../assets/css/core.min.css">
+		<link rel="stylesheet" href="../assets/css/vendor_bundle.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="../demo.files/logo/icon_512x512.png">
+
+	</head>
+
+	<!--
+
+		Available Body Classes
+			.layout-boxed 					- boxed layout (ignored if any .header-* class is present)
+
+			.header-scroll-reveal  			- header : hide on scroll down and reveal on scroll up
+			.header-sticky  				- header : always visible on top
+			.header-over  					- header : over slider|parallax|image (next section must contain a large image, else will be indistinguishable)
+
+				Possible header combinations:
+					.header-over + .header-scroll-reveal
+					.header-over + .header-sticky
+						* NOTE: if .header-sticky + .header-scroll-reveal are both used, .header-scroll-reveal is ignored
+
+
+			.bg-cover .bg-fixed 			- both classes used with .layout-boxed to set a background image via style="background-image:url(...)"
+	-->
+	<body class="header-sticky">
+
+		<div id="wrapper">
+
+
+			<!-- Header -->
+			<div id="header"></div>
+			<!-- /Header -->
+
+			<!-- start :: table -->
+			<div class="container py-7" style="margin-top: 30px;">
+
+				<!-- table start -->
+				<div class="table-responsive">
+
+					<table class="table table-hover table-align-middle fw-medium text-center">
+
+						<thead>
+							<tr>
+								<th class="text-align-start text-muted small">
+									<span class="d-block pt-5">
+										* all taxes included
+									</span>
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									<span class="d-block w--180 fs-6"> 	DEVELOPMENT</span>
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="10" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"29", "duration":800},
+												{"from":"29", "to":"39", "duration":800}
+											]'
+										>10</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									<span class="d-block w--180 fs-6">STARTER</span>
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="40" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"59", "duration":800},
+												{"from":"59", "to":"79", "duration":800}
+											]'
+										>40</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									<span class="d-block w--180 fs-6">INTERMEDIATE</span> 
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="80" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									<span class="d-block w--180 fs-6">PREMIUM</span> 
+									
+									<div class="h3 d-block text-muted fw-bold mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="120" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									<span class="d-block w--180 fs-6">ULTIMATE</span> 
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="200" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									<span class="d-block w--180 fs-6">UNLIMITED</span> 
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="360" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr class="fw-normal">
+								<td class="text-align-start">Connections Limit</td>
+								<td>20</td>
+								<td>300</td>
+								<td>800</td>
+								<td>1500</td>
+								<td>3000</td>
+								<td>UNLIMITED</td>
+							</tr>							
+							<tr>
+								<td class="text-align-start">
+									DDoS protection
+								</td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+							</tr>							
+							<tr>
+								<td class="text-align-start">
+									Flood Protection
+								</td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+							</tr>							
+							<tr>
+								<td class="text-align-start">
+									Exploit protection
+								</td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+							</tr>							
+							<tr>
+								<td class="text-align-start">
+									Vsroplus Features
+								</td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+								<td><i class="fi mdi-check fs-5 text-primary"></i></td>
+							</tr>
+							<tr>
+								<th class="text-align-start text-muted small">
+									<span class="d-block-xs">
+										3 Months Subscription Discount
+									</span>
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="10" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"29", "duration":800},
+												{"from":"29", "to":"39", "duration":800}
+											]'
+										>10</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="40" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"59", "duration":800},
+												{"from":"59", "to":"79", "duration":800}
+											]'
+										>40</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="80" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									
+									<div class="h3 d-block text-muted fw-bold mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="120" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="200" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+								<th class="fw-medium text-center text-primary fs-2" style="width:180px">
+									
+									<div class="h3 d-block text-muted fw-light mt-2">
+										<span class="fs-6">$</span> 
+										
+										<span class="pricetable-count"
+											data-toggle="count" 
+											data-count-decimals="" 
+											data-count-from="0" 
+											data-count-to="360" 
+											data-count-duration="1000"
+
+											data-count-toggle='[
+												{"from":"0", "to":"199", "duration":800},
+												{"from":"199", "to":"289", "duration":800}
+											]'
+										>39</span>
+
+										<span class="fs-6 fw-light">/mo</span>
+									</div>
+
+								</th>
+
+							</tr>	
+							<tr class="fw-normal">
+								<td class="text-align-start text-muted small"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="bg-theme-color-light text-gray-500 fw-normal small">
+									RECOMMENDED
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>						
+							
+						</tbody>
+
+					</table>
+
+				</div>
+				<!-- table end -->
+
+			</div>
+			<!-- end :: table -->
+
+
+
+
+
+			<!-- FAQ -->
+			<div class="section bg-theme-color-light" data-aos="fade-in" data-aos-delay="100">
+				<div class="container">
+				
+					<div class="text-center mb-5">
+						<span class="badge bg-primary-soft rounded-pill p-2">
+							F &bull; A &bull; Q
+						</span>
+						<h2 class="h1 mb-5 mt-2 fw-bold">Frequently Asked Questions</h2>
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-12 col-sm-6 mb-4">
+							<h3 class="fs-4">Do I have a business email address?</h3>
+							<p>
+								We are not able to offer you a dedicated email service for a custom email address like office@mydomain.com at this time. 
+								An easy way to create your own business email address is using a cheap hosting plan. 
+							</p>
+						</div>
+
+						<div class="col-12 col-sm-6 mb-4">
+							<h3 class="fs-4">I want to leave. Can I export my data?</h3>
+							<p>
+								Our core value is "<b>let's fight together for the better</b>". Would make no sense to limit your freedom, isn't it? If you want to leave to other platform, you can export: products, orders, users and subscribers. You own your data!
+							</p>
+						</div>
+
+						<div class="col-12 col-sm-6 mb-4">
+							<h3 class="fs-4">Do I have a traffic limit?</h3>
+							<p>
+								No, there is no such thing like "traffic limit" or "order limit".
+							</p>
+						</div>
+
+						<div class="col-12 col-sm-6 mb-4">
+							<h3 class="fs-4">Can I upgrade my plan later?</h3>
+							<p>
+								Sure! You can upgrade or downgrade your plan.
+							</p>
+						</div>
+
+						<div class="col-12 col-sm-6 mb-4">
+							<h3 class="fs-4">What happens if prices goes up?</h3>
+							<p>
+								You keep the intial plan price for your existing account. If you open a new account, the new price is applied.
+							</p>
+						</div>
+
+						<div class="col-12 col-sm-6 mb-4">
+							<h3 class="fs-4">Can I transfer/sell my account?</h3>
+							<p>
+								Sure! You can transfer or sell your account.
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /FAQ -->
+
+
+
+
+			<!-- CTA -->
+			<section data-aos="fade-in" data-aos-delay="200">
+				<div class="container text-center">
+
+					<h2 class="mb-5 col-md-8 col-lg-7 fw-bold mx-auto">
+						Try now for 30 days and see which plan is right for you
+					</h2>
+
+					<a href="register.html" class="btn btn-lg btn-primary transition-hover-top px-4 d-block-xs">
+						<i class="fi fi-layers"></i>
+						<b class="fw-medium">START</b> FOR <b class="fw-medium">FREE</b>
+					</a>
+
+				</div>
+			</section>
+			<!-- /CTA -->
+
+
+
+
+			<!-- Footer -->
+			<div id="footer"></div>
+			<!-- /Footer -->
+
+
+		</div><!-- /#wrapper -->
+		<script>
+			fetch('header.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('header').innerHTML = data;
+			  });
+			fetch('footer.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('footer').innerHTML = data;
+			  });
+		  </script>
+		<script src="../assets/js/core.min.js"></script>
+		
+	</body>
+</html>
