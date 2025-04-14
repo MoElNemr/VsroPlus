@@ -24,6 +24,35 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="apple-touch-icon" href=" ../demo.files/logo/icon_512x512.png">
 		
+		<style>
+			.card-container {
+				display: flex !important;
+				flex-direction: row !important;
+				flex-wrap: wrap !important;
+				justify-content: space-around !important;
+
+			}
+			.card{
+				width: 30%;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.card img {
+				height: 50%;
+				width: 50%;
+				transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
+				transform-origin: center center; /* Ensures scaling happens from center */
+				object-fit: cover; /* Prevents image distortion */
+			}
+
+			.card:hover img {
+				width: 70%;
+				height: 70%;
+				transform: scale(1.05); /* Optional: adds slight zoom effect */
+			}
+		</style>
 
 	</head>
 
@@ -115,20 +144,30 @@
 					</h2>
 
 
-					<div class="row">
-						<div class="col-12 col-lg-10 offset-lg-1">
+					<div class="cards-container">
 
-							<div class="row">
+						<a href="https://www.viking-sro.com/" class="card">
+							<img src="../assets/images/clients/3i0ufrgrsgu.png" alt="">
+						</a>
 
-								<div class="col-12 col-md-6 col-lg-4 mb-5">
-									<img class="col-12 col-md-6 col-lg-4 mb-5" src="../assets/images/clients/35jwyh4jh14.png" alt="">
-								</div>
+						<a href="https://www.viking-sro.com/" class="card">
+							<img src="../assets/images/clients/3ngmwiofrub.png" alt="">
+						</a>
 
-							</div>
+						<a href="https://www.viking-sro.com/" class="card">
+							<img src="../assets/images/clients/axpd54xcf2a.png" alt="">
+						</a>
 
-						</div>
+						<a href="https://www.viking-sro.com/" class="card">
+							<img src="../assets/images/clients/crrmkeyzufe.png" alt="">
+						</a>
+
+						<a href="https://www.viking-sro.com/" class="card">
+							<img src="../assets/images/clients/fllxlpdcjnw.png" alt="">
+						</a>
+						
 					</div>
-
+					
 				</div>
 			</div>
 			<!-- end :: customers -->
