@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>VsroPlus Cookies</title>
+		<meta name="description" content="...">
+
+		<meta name="viewport" content="width=device-width, maximum-scale=5, initial-scale=1">
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- up to 10% speed up for external res -->
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/">
+		<!-- preloading icon font is helping to speed up a little bit -->
+		<link rel="preload" href="../assets/fonts/flaticon/Flaticon.woff2" as="font" type="font/woff2" crossorigin>
+
+		<link rel="stylesheet" href="../assets/css/core.min.css">
+		<link rel="stylesheet" href="../assets/css/vendor_bundle.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="../demo.files/logo/icon_512x512.png">
+
+	</head>
+
+	<!--
+
+		Available Body Classes
+			.layout-boxed 					- boxed layout (ignored if any .header-* class is present)
+
+			.header-scroll-reveal  			- header : hide on scroll down and reveal on scroll up
+			.header-sticky  				- header : always visible on top
+			.header-over  					- header : over slider|parallax|image (next section must contain a large image, else will be indistinguishable)
+
+				Possible header combinations:
+					.header-over + .header-scroll-reveal
+					.header-over + .header-sticky
+						* NOTE: if .header-sticky + .header-scroll-reveal are both used, .header-scroll-reveal is ignored
+
+
+			.bg-cover .bg-fixed 			- both classes used with .layout-boxed to set a background image via style="background-image:url(...)"
+	-->
+	<body class="header-scroll-reveal">
+
+		<div id="wrapper">
+
+
+			<!-- Header -->
+			<div id="header"></div>
+			<!-- /Header -->
+
+
+		
+
+      <!-- PAGE TITLE -->
+      <div class="container pt-6">
+
+        <h1 class="display-5 fw-bold">
+          Cookies
+        </h1>
+
+      </div>
+      <!-- /PAGE TITLE -->
+
+
+
+
+			<!-- -->
+			<div class="section">
+				<div class="container">
+
+					<h2 class="h3">We use cookies</h2>
+					<p class="lead">
+						Cookies are a common feature used on almost all websites.<br>
+						Most common use is to remember your login so you don't have to sign in everytime you come back!
+					</p>
+					<p>
+						A cookie is a small variable that is saved by your browser to allow a website to recognise it and to store some information about your preferences.
+						Cookies are used for different reasons, including helping you to stay logged in to your account, measuring visits on our site, recognising and remembering your preferences and showing you personalised ads.
+					</p>
+
+
+					<h3 class="mt-5">Your personalised preferences</h3>
+					<p>
+						We work with well known partners like Google and Facebook to show you ads for products and services you might be interested in. 
+						Don't worry, you can always revisit these settings later.
+					</p>
+
+
+					<div class="row mt-5">
+						<div class="col-12 col-md-8 offset-md-2">
+				
+							<div class="row">
+								<div class="col-12 col-md-6 text-center">
+									<a href="javascript:;" class="btn d-block-xs py-3 btn-primary btn-soft" onclick="$.SOW.core.gdpr.extend(0); window.location.reload();">
+										<i class="fi fi-check float-start"></i>
+										I am ok with personalized ads
+									</a>
+								</div>
+
+								<div class="col-12 mt-3 hidden-md-up"><!-- mobile spacer --></div>
+
+								<div class="col-12 col-md-6 text-center">
+									<a href="javascript:;" class="btn d-block-xs py-3 btn-light" onclick="$.SOW.core.gdpr.destroy(); window.location.reload();">
+										<i class="fi flaticon-close-1 fs-6 float-start"></i>
+										I do not want personalized ads
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- / -->
+
+
+
+			<!-- -->
+			<div class="section bg-theme-color-light">
+				<div class="container">
+
+					<div class="mb-5 text-center-xs">
+						<h3>
+							Website Cookies
+						</h3>
+						<p>
+							Note: Many cookies are set/unset only according to user interraction, on specific website sections (where cookies are required).
+							<br>
+							Cookies are set per device &amp; browser. If anoter device/browser is used, previous cookie are lost!
+						</p>
+					</div>
+
+
+					<!-- mobile swipe info -->
+					<div class="d-block d-sm-none position-relative bg-theme-color-light clearfix text-center p-4 mt-3 mb-5 text-gray-500">
+						<i class="fi fi-arrow-left-slim float-start"></i>
+						<i class="fi fi-arrow-right-slim float-end"></i>
+						<span class="text-gray-500">
+							swipe table below left/right
+						</span>
+						<i class="arrow arrow-lg arrow-bottom arrow-center border-theme-color-light"></i>
+					</div>
+					<!-- /mobile swipe info -->
+
+
+					<div class="table-responsive bg-white p-4 p-xl-5 rounded shadow-primary-xs">
+						<table class="table m-0">
+							<thead>
+								<tr>
+									<th class="border-0" style="width: 200px;">Cookie</th>
+									<th class="border-0">Usage</th>
+									<th class="border-0" style="width: 150px;">Period</th>
+									<th class="border-0" style="width: 100px;">&nbsp;</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>SOWENGINE</td>
+									<td>System framework session name</td>
+									<td>30 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>cart_id</td>
+									<td>Customer cart id (required for orders)</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>__gck</td>
+									<td>Hash unique identifier used by chat system &amp; orders</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>__chh</td>
+									<td>Chat cookie functionality</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>__dt</td>
+									<td>Device type - remember what device type you have (desktop or mobile) for a faster browsing &amp; optimized elements/images.</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>_sfcu</td>
+									<td>Summary favourite count - used by logged users only.</td>
+									<td>30 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>__cas</td>
+									<td>Checkout user subscribed to newsletter.</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>_rvoted</td>
+									<td>Product review voted.</td>
+									<td>3 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>_qvoted</td>
+									<td>Product question voted.</td>
+									<td>3 days</td>
+									<td>Required</td>
+								</tr>
+
+
+								<tr>
+									<td>_bcvoted</td>
+									<td>Blog comment voted.</td>
+									<td>3 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>_rm</td>
+									<td>Remember me - function to remember you logged in.</td>
+									<td>30 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>last_tab</td>
+									<td>Used to remember last selected tab if multiple tabs are present.</td>
+									<td>7 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>user_history</td>
+									<td>User navigation history - last products visited.</td>
+									<td>30 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>marketing_modal</td>
+									<td>Remember last shown marketing modal (promotions, coupons, etc) to avoid user spamming.</td>
+									<td>1 day</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>cca_sub</td>
+									<td>Coupon code cookie.</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>unsub_*</td>
+									<td>* = encrypted hash. Used if you unsubscribed from newsletter.</td>
+									<td>365 days</td>
+									<td>Required</td>
+								</tr>
+
+								<tr>
+									<td>__gdpr</td>
+									<td>GDPR Cookie consent.</td>
+									<td>365 days</td>
+									<td>Optional</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+
+
+				</div>
+			</div>
+			<!-- / -->
+
+
+
+
+
+			<!-- Footer -->
+			<div id="footer"></div>
+			<!-- /Footer -->
+
+
+		</div><!-- /#wrapper -->
+
+
+
+
+
+
+
+
+
+		<!-- 
+			Reset GDPR:
+				$.SOW.core.gdpr.destroy();
+				OR BY HASH: #del:gdpr
+
+			By hitting 'Accept & Continue' Button, default cookie is set to 0 (all cookies accepted).
+
+			++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+			Extending Consent by level (examples):
+					0 = accept all cookies!
+					1 = website only
+					2 = website + advertising
+					... more if needed
+
+				JS USAGE EXAMPLE:
+					$.SOW.core.gdpr.extend(2); 	// allow website + advertising
+
+				HTML EXAMPLE
+					<a href="#" class="btn-cookie-extend" data-cookie-level="2">Website + Advertising</a>
+
+				BACKEND:
+					Backend should use '__gdpr' cookie.
+
+
+			The following code should be present on all pages:
+		-->
+		<div id="gdpr" class="hide bg-white rounded-lg shadow-lg w-100 max-w-350 p-5 m-3 position-fixed fixed-bottom right-0 z-index-9999">
+			
+			<h3 class="fs-4 mb-4">
+				
+				<a href="#" class="close mt-n1">
+					<span class="fi fi-close fs-4" aria-hidden="true"></span>
+				</a>
+
+				VsroPlus Cookies
+
+			</h3>
+
+			<hr>
+
+			<p class="lead">
+				We use cookies to improve your experience on our site and to show you personalised ads.
+			</p>
+
+			<a href="#" class="btn btn-primary btn-cookie-accept btn-lg w-100">
+				Accept &amp; Continue
+			</a>
+			
+			<hr class="my-4">
+			
+			<p class="m-0">
+
+				<span class="d-block">Need to learn more?</span>
+
+				<a href="#" class="link-muted">Privacy Policy</a> 
+				
+				&ndash; and &ndash; 
+				
+				<a href="#" class="link-muted">Cookie Policy</a>
+
+			</p>
+		</div>
+
+
+
+
+		
+
+		<script>
+			fetch('header.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('header').innerHTML = data;
+			  });
+			fetch('footer.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('footer').innerHTML = data;
+			  });
+		</script>
+		<script src="../assets/js/core.min.js"></script>
+		
+	</body>
+</html>
