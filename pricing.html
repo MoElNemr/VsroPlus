@@ -24,6 +24,7 @@
 		<link rel="shortcut icon" href="assets/images/logo/favicon.ico">
 		<link rel="apple-touch-icon" href="assets/images/logo/favicon.ico">
 
+		<link rel="stylesheet" href="assets/css/custom.css">
 
 	</head>
 
@@ -330,7 +331,7 @@
 
 								<!-- Get Smarty : mobile only (d-block d-sm-none)-->
 								<li class="nav-item d-block d-sm-none">
-									<a target="_blank" href="pricing.html" class="btn w-100 btn-primary shadow-none text-white m-0">
+									<a  href="pricing.html" class="btn w-100 btn-primary shadow-none text-white m-0">
 										Get Vsroplus
 									</a>
 								</li>
@@ -453,7 +454,7 @@
 
 							<li class="list-inline-item mx-1 ">
 
-								<a target="_blank" href="pricing.html" class="btn btn-sm btn-light bg-transparent text-muted shadow-none m-0" b-nx7fftjgss="">GET VSROPLUS</a>
+								<a  href="pricing.html" class="btn btn-sm btn-light bg-transparent text-muted shadow-none m-0" b-nx7fftjgss="">GET VSROPLUS</a>
 							</li>
 
 						</ul>
@@ -474,7 +475,7 @@
 
 
 			<!-- INTRO -->
-			<div class="section">
+			<div class="section mb-5" data-aos="fade-in">
 				<div class="container">
 	
 				  <div class="row g-4 align-items-center mt-3">
@@ -518,7 +519,7 @@
 
 
 			<!-- BILLING SWITCHER -->
-			<div class="section p-0 bg-transparent position-relative z-index-2" style="margin-top:-50px">
+			<div class="section p-0 mt-6 bg-transparent position-relative z-index-2" style="margin-top:-50px">
 				<div class="container">
 					
 					<div class="bg-white shadow-primary-xs rounded py-4">
@@ -547,10 +548,10 @@
 
 
 			<!-- block : pricing -->
-			<div class="section bg-gradient-light">
-				<div class="container">
+			<div class="section bg-gradient-light mt-0">
+				<div class="container mb-5 pb-5">
 
-					<div class=" py-5" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+					<div class="price-cards " >
 
 						<!--development-->
 						<div class="">
@@ -661,7 +662,7 @@
 					</div>
 
 					
-					<div class=" py-5" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+					<div class="price-cards " >
 
 						<!--PREMIUM-->
 						<div class="">
@@ -777,9 +778,9 @@
 				</div>
 					
 				<!-- FAQ -->
-				<div class="section bg-light" data-aos="fade-in" data-aos-delay="100">
+				<div class="p-3 bg-theme-color-light mt-6" data-aos="fade-in" data-aos-delay="100">
 					<div class="container">
-				
+					
 						<div class="text-center mb-5">
 							<span class="badge bg-primary-soft rounded-pill p-2">
 								F &bull; A &bull; Q
@@ -788,147 +789,49 @@
 						</div>
 
 
-						<!--
-							Accordion
-						-->
-						<div class="accordion shadow-xs" id="accordionBottomBorder" data-aos="fade-in" data-aos-delay="250">
+						<div class="row">
 
-							<div class="card border-bottom border-start-0 border-end-0 border-top-0">
-								<div class="card-header border-0 p-0 border bg-transparent" id="cleanHeadingBorder1">
-									<h2 class="mb-0">
-										<button class="fs-4 btn btn-link w-100 btn-lg text-align-start text-decoration-none text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#borderCollapse1" aria-expanded="true" aria-controls="borderCollapse1">
-											Do I have a business email address?
-											<span class="group-icon float-end">
-												<i class="fi fi-arrow-start-slim"></i>
-												<i class="fi fi-arrow-down-slim"></i>
-											</span>
-										</button>
-									</h2>
-								</div>
-
-								<div id="borderCollapse1" class="collapse show" aria-labelledby="cleanHeadingBorder1" data-bs-parent="#accordionBottomBorder">
-									<div class="card-body">
-										<p class="lead">
-
-											We are not able to offer you a dedicated email service for a custom email address like office@mydomain.com at this time. 
-											An easy way to create your own business email address is using a cheap hosting plan. <a href="#">Here is an informative guide</a>.
-
-										</p>
-									</div>
-								</div>
+							<div class="col-12 col-sm-6 mb-4">
+								<h3 class="fs-4">Do I have a business email address?</h3>
+								<p>
+									We are not able to offer you a dedicated email service for a custom email address like office@mydomain.com at this time. 
+									An easy way to create your own business email address is using a cheap hosting plan. <a href="#">Here is an informative guide</a>.
+								</p>
 							</div>
 
-							<div class="card border-bottom border-start-0 border-end-0 border-top-0">
-								<div class="card-header border-0 p-0 border bg-transparent" id="cleanHeadingBorder2">
-									<h2 class="mb-0">
-										<button class="fs-4 btn btn-link w-100 btn-lg text-align-start text-decoration-none text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#borderCollapse2" aria-expanded="false" aria-controls="borderCollapse2">
-											Do I have a traffic limit?
-											<span class="group-icon float-end">
-												<i class="fi fi-arrow-start-slim"></i>
-												<i class="fi fi-arrow-down-slim"></i>
-											</span>
-										</button>
-									</h2>
-								</div>
-
-								<div id="borderCollapse2" class="collapse" aria-labelledby="cleanHeadingBorder2" data-bs-parent="#accordionBottomBorder">
-									<div class="card-body">
-										<p class="lead">
-											No, there is no such thing like "traffic limit" or "order limit".
-										</p>
-									</div>
-								</div>
+							<div class="col-12 col-sm-6 mb-4">
+								<h3 class="fs-4">I want to leave. Can I export my data?</h3>
+								<p>
+									Our core value is "<b>let's fight together for the better</b>". Would make no sense to limit your freedom, isn't it? If you want to leave to other platform, you can export: products, orders, users and subscribers. You own your data!
+								</p>
 							</div>
 
-							<div class="card border-bottom border-start-0 border-end-0 border-top-0">
-								<div class="card-header border-0 p-0 border bg-transparent" id="cleanHeadingBorder3">
-									<h2 class="mb-0">
-										<button class="fs-4 btn btn-link w-100 btn-lg text-align-start text-decoration-none text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shadowCollapse3" aria-expanded="false" aria-controls="shadowCollapse3">
-											Can I upgrade my plan later?
-											<span class="group-icon float-end">
-												<i class="fi fi-arrow-start-slim"></i>
-												<i class="fi fi-arrow-down-slim"></i>
-											</span>
-										</button>
-									</h2>
-								</div>
-
-								<div id="shadowCollapse3" class="collapse" aria-labelledby="cleanHeadingBorder3" data-bs-parent="#accordionBottomBorder">
-									<div class="card-body">
-										<p class="lead">
-											Sure! You can upgrade or downgrade your plan.
-										</p>
-									</div>
-								</div>
+							<div class="col-12 col-sm-6 mb-4">
+								<h3 class="fs-4">Do I have a traffic limit?</h3>
+								<p>
+									No, there is no such thing like "traffic limit" or "order limit".
+								</p>
 							</div>
 
-
-							<div class="card border-bottom border-start-0 border-end-0 border-top-0">
-								<div class="card-header border-0 p-0 border bg-transparent" id="cleanHeadingBorder4">
-									<h2 class="mb-0">
-										<button class="fs-4 btn btn-link w-100 btn-lg text-align-start text-decoration-none text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shadowCollapse4" aria-expanded="false" aria-controls="shadowCollapse4">
-											Can I upgrade my plan later?
-											<span class="group-icon float-end">
-												<i class="fi fi-arrow-start-slim"></i>
-												<i class="fi fi-arrow-down-slim"></i>
-											</span>
-										</button>
-									</h2>
-								</div>
-
-								<div id="shadowCollapse4" class="collapse" aria-labelledby="cleanHeadingBorder4" data-bs-parent="#accordionBottomBorder">
-									<div class="card-body">
-										<p class="lead">
-											Sure! You can upgrade or downgrade your plan.
-										</p>
-									</div>
-								</div>
+							<div class="col-12 col-sm-6 mb-4">
+								<h3 class="fs-4">Can I upgrade my plan later?</h3>
+								<p>
+									Sure! You can upgrade or downgrade your plan.
+								</p>
 							</div>
 
-
-							<div class="card border-bottom border-start-0 border-end-0 border-top-0">
-								<div class="card-header border-0 p-0 border bg-transparent" id="cleanHeadingBorder5">
-									<h2 class="mb-0">
-										<button class="fs-4 btn btn-link w-100 btn-lg text-align-start text-decoration-none text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shadowCollapse5" aria-expanded="false" aria-controls="shadowCollapse5">
-											What happens if prices goes up?
-											<span class="group-icon float-end">
-												<i class="fi fi-arrow-start-slim"></i>
-												<i class="fi fi-arrow-down-slim"></i>
-											</span>
-										</button>
-									</h2>
-								</div>
-
-								<div id="shadowCollapse5" class="collapse" aria-labelledby="cleanHeadingBorder5" data-bs-parent="#accordionBottomBorder">
-									<div class="card-body">
-										<p class="lead">
-											You keep the intial plan price for your existing account. If you open a new account, the new price is applied.
-										</p>
-									</div>
-								</div>
+							<div class="col-12 col-sm-6 mb-4">
+								<h3 class="fs-4">What happens if prices goes up?</h3>
+								<p>
+									You keep the intial plan price for your existing account. If you open a new account, the new price is applied.
+								</p>
 							</div>
 
-
-							<div class="card border-0">
-								<div class="card-header border-0 p-0 border bg-transparent" id="cleanHeadingBorder6">
-									<h2 class="mb-0">
-										<button class="fs-4 btn btn-link w-100 btn-lg text-align-start text-decoration-none text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shadowCollapse6" aria-expanded="false" aria-controls="shadowCollapse6">
-											Can I transfer/sell my account?
-											<span class="group-icon float-end">
-												<i class="fi fi-arrow-start-slim"></i>
-												<i class="fi fi-arrow-down-slim"></i>
-											</span>
-										</button>
-									</h2>
-								</div>
-
-								<div id="shadowCollapse6" class="collapse" aria-labelledby="cleanHeadingBorder6" data-bs-parent="#accordionBottomBorder">
-									<div class="card-body">
-										<p class="lead">
-											Sure! You can transfer or sell your account.
-										</p>
-									</div>
-								</div>
+							<div class="col-12 col-sm-6 mb-4">
+								<h3 class="fs-4">Can I transfer/sell my account?</h3>
+								<p>
+									Sure! You can transfer or sell your account.
+								</p>
 							</div>
 
 						</div>
