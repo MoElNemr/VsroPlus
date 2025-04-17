@@ -25,47 +25,67 @@
 		<link rel="shortcut icon" href="demo.files/logo/favicon.ico">
 		<link rel="apple-touch-icon" href="demo.files/logo/favicon.ico">
 
-		<style>
-			.link-container a {
-				display: inline-flex;
-				gap: 5px;
-				margin: 0;
-				padding: 0;
-			}
-			.more-feature-card{
-				height: 350px;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-			}
-            .custom-card{
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
-            }
-			.section{
-				padding: 10px !important;
-                margin-top: 30px;
-			}
-            body,p{
-                color: black !important;
-            }
-		</style>
+		<link rel="stylesheet" href="assets/css/custom.css">
 	</head>
-<body class="header-scroll-reveal">
-    <div id="wrapper">
+    <body class="header-sticky">
+        
+        
+        <div id="wrapper">
         <!-- Header -->
 			<header id="header" class="shadow-xs">
 
+
+
+                <!-- TOP BAR -->
+					<div id="top_bar" class="bg-light"> <!-- optional if body.header-sticky is present: add .js-ignore class to ignore autohide and stay visible all the time -->
+						<div class="container">
+			  
+						  <div class="text-nowrap"><!-- change with .scrollable-horizontal to horizontally scroll, if -only- no dropdown is present -->
+							<div class="d-flex justify-content-between">
+			  
+							  <div class="d-inline-block float-start">
+								<ul class="list-inline m-0">
+			  
+								  <!-- LANGUAGE -->
+								  <li class="dropdown list-inline-item m-0">
+			  
+									<a id="topDDLanguage" href="#" class="py-2 d-inline-block" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+									  <i class="flag flag-us"></i> 
+									  <span class="text-muted px-2">English</span>
+									</a>
+			  
+									<div aria-labelledby="topDDLanguage" class="dropdown-menu dropdown-menu-hover p-1 pb-0 scrollable-vertical">
+									  <a href="#" class="active dropdown-item text-muted text-truncate lh-1 rounded mb-1">
+										<i class="flag flag-us"></i> 
+										English
+									  </a>
+									  <a href="#" class="dropdown-item text-muted text-truncate lh-1 rounded mb-1">
+										<i class="flag flag-de"></i> 
+										German
+									  </a>
+									  <a href="#" class="dropdown-item text-muted text-truncate lh-1 rounded mb-1">
+										<i class="flag flag-fr"></i> 
+										Francaise
+									  </a>
+									</div>
+			  
+								  </li>
+								  <!-- /LANGUAGE -->
+			  
+			  
+								</ul>
+							  </div>
+			  
+			  
+							</div>
+						  </div>
+			  
+						</div>
+					</div>
+					<!-- /TOP BAR -->
 					
 				<!-- Navbar -->
 				<div class="container position-relative">
-
-
-					
-
-
-
 
 					<nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit">
 
@@ -196,9 +216,9 @@
 
 
 								<!-- home -->
-								<li class="nav-item dropdown active">
+								<li class="nav-item dropdown active ps-5">
 
-									<a style="color: black ;" href="index.html" id="mainNavHome" class="nav-link" 
+									<a  href="index.html" id="mainNavHome" class="nav-link" 
 									data-bs-toggle="" 
 									aria-haspopup="true" 
 									aria-expanded="false">
@@ -211,7 +231,7 @@
 								<!-- pages -->
 								<li class="nav-item dropdown">
 
-									<a style="color: black ;" href="news.html" id="mainNavPages" class="nav-link" 
+									<a  href="news.html" id="mainNavPages" class="nav-link" 
 										data-bs-toggle="" 
 										aria-haspopup="true" 
 										aria-expanded="false">
@@ -223,7 +243,7 @@
 								<!-- features -->
 								<li class="nav-item dropdown">
 
-									<a style="color: black ;" href="features.html" id="mainNavFeatures" class="nav-link " 
+									<a  href="features.html" id="mainNavFeatures" class="nav-link " 
 										data-bs-toggle="" 
 										aria-haspopup="true" 
 										aria-expanded="false">
@@ -235,7 +255,7 @@
 								<!-- blog -->
 								<li class="nav-item dropdown">
 
-									<a style="color: black ;" href="pricing.html" id="mainNavBlog" class="nav-link" 
+									<a  href="pricing.html" id="mainNavBlog" class="nav-link" 
 										data-bs-toggle="" 
 										aria-haspopup="true" 
 										aria-expanded="false">
@@ -248,7 +268,7 @@
 								<!-- demos -->
 								<li class="nav-item dropdown active">
 
-									<a style="color: black ;" href="clients.html" id="mainNavDemo" class="nav-link " 
+									<a  href="clients.html" id="mainNavDemo" class="nav-link " 
 										data-bs-toggle="" 
 										aria-haspopup="true" 
 										aria-expanded="false">
@@ -261,7 +281,7 @@
 								<!-- documentation -->
 								<li class="nav-item dropdown">
 
-									<a style="color: black ;" href="contactUs.html" id="mainNavDocumentation" class="nav-link  nav-link-caret-hide" 
+									<a  href="contactUs.html" id="mainNavDocumentation" class="nav-link  nav-link-caret-hide" 
 										data-bs-toggle="" 
 										aria-haspopup="true" 
 										aria-expanded="false">
@@ -427,10 +447,10 @@
 			</header>
 			<!-- /Header -->
      
-        <div class="section" style="margin-top: 100px;">
+        <div class="section pt-5" >
             <div class="container">
 
-                <div class="section row">
+                <div class="section row p-3">
                     <div class="col-6 col-lg-4 mb-5 ">
                         <h3 class="h2 py-3">DDoS protection</h3>
                         <p> To guarantee maximum security for your infrastructures, an anti-DDoS system is included with all packages. It ensures service continuity for your applications, in the event of an attack.</p>
@@ -463,9 +483,9 @@
                 </div>
 
                 <!-- More features cards -->
-                <div class="section bg-light row">
+                <div class="section row p-3">
                     
-                    <h2 class=" fw-bold">Exclusive Features</h2>
+                    <h2 class="fs-2 fw-bold">Exclusive Features</h2>
                     <div class="container">
 
                         <div class="row">
@@ -875,7 +895,7 @@
                 <!-- /block : cards -->
                     
                 <!-- block :Security cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Security</h2>
                     <div class="container">
 
@@ -947,7 +967,7 @@
                 <!-- /block : cards -->
 
                  <!--images cards-->
-                 <div class="section" style="margin-bottom: 10px;">
+                 <div class="section m-3">
                     <div class="link-container">
                         <a href="assets/images/features images/ipaddresses.png" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy " data-loaded="true">
                             <img width="300" src="assets/images/features images/ipaddresses.png" alt="...">
@@ -963,7 +983,7 @@
                  <!--images cards-->
 
                 <!-- block :General cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">General</h2>
                     <div class="container">
 
@@ -1021,7 +1041,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Jobbing cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Jobbing</h2>
                     <div class="container">
 
@@ -1079,7 +1099,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Uniques cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Uniques</h2>
                     <div class="container">
 
@@ -1135,7 +1155,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Guild and Union cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Guild and Union</h2>
                     <div class="container">
 
@@ -1193,7 +1213,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Fortress War cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Fortress War</h2>
                     <div class="container">
 
@@ -1251,7 +1271,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Alchemy cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Alchemy</h2>
                     <div class="container">
 
@@ -1309,7 +1329,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Items cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Items</h2>
                     <div class="container">
 
@@ -1367,7 +1387,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Skills and Mastery cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Skills and Mastery</h2>
                     <div class="container">
 
@@ -1425,7 +1445,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Teleports cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Teleports</h2>
                     <div class="container">
 
@@ -1483,7 +1503,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Regions cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Regions</h2>
                     <div class="container">
 
@@ -1541,7 +1561,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Quests cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Quests</h2>
                     <div class="container">
 
@@ -1599,7 +1619,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Instant Delivery cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Instant Delivery</h2>
                     <div class="container">
 
@@ -1657,7 +1677,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Action Performer cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Action Performer</h2>
                     <div class="container">
 
@@ -1715,7 +1735,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Academy cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Academy</h2>
                     <div class="container">
 
@@ -1773,7 +1793,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Misc cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Misc</h2>
                     <div class="container">
 
@@ -1831,7 +1851,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Events cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Events</h2>
                     <div class="container">
 
@@ -1890,7 +1910,7 @@
                 <!-- /block : cards -->
 
                 <!-- block :Customer Panel cards -->
-                <div class="section row">
+                <div class="section row p-3">
                     <h2 class=" fw-bold">Customer Panel</h2>
                     <div class="container">
 

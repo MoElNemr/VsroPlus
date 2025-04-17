@@ -1,0 +1,39 @@
+
+.kards-kontainer {
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.kard{
+    border-radius:40px;
+    padding:5px;
+    margin-bottom: 80px;
+    display: grid;
+    justify-items: center;
+    width: 30%;
+    height: 150px;
+    align-content: center;
+}
+.kard img {
+    width: 50%;
+    transition:  0.4s ease-in-out; /* Smooth transition for all properties */
+    transform-origin: center center; /* Ensures scaling happens from center */
+}
+
+.kard:hover img {
+    width: 70%;
+}
+.link-container a {
+    display: inline-flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+.more-feature-card{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
