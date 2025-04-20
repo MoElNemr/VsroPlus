@@ -1,4 +1,11 @@
 
+#header a:hover{
+    transform: scale(1.2);
+}
+
+
+/* start of the clients page style */
+
 .kards-kontainer {
     display: flex ;
     flex-direction: row;
@@ -18,13 +25,19 @@
 }
 .kard img {
     width: 50%;
-    transition:  0.4s ease-in-out; /* Smooth transition for all properties */
-    transform-origin: center center; /* Ensures scaling happens from center */
+    transition:  0.4s ease-in-out; 
+    transform-origin: center center; 
 }
 
 .kard:hover img {
-    width: 70%;
+    transform: scale(1.5);
 }
+
+/* end of the clients page style */
+
+
+/*Features cards*/
+
 .link-container a {
     display: inline-flex;
     gap: 5px;
@@ -37,8 +50,16 @@
     flex-direction: column;
     justify-content: space-between;
 }
+/*end of features cards styles*/
+
+
+/*price page styles*/
+
 .price-cards{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+/*end of price page styles*/
+
+
