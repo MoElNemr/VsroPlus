@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="UTF-8">
-		<title>Sign Up - Vsroplus</title>
+		<title>Sign In - Vsroplus</title>
 		<meta name="description" content="...">
 
 		<meta name="viewport" content="width=device-width, maximum-scale=5, initial-scale=1">
@@ -453,11 +453,11 @@
 				<div class="px-2 max-w-800 mx-auto text-center">
 
 					<h1 class="display-4 fw-bold">
-						Create Account
+						Members Login
 					</h1>
 
 					<p class="lead m-0">
-						It's free and easy!
+						Manage your account and data
 					</p>
 
 				</div>
@@ -471,7 +471,7 @@
 
 						<div class="col-12 col-sm-8 col-md-8 col-lg-6 offset-sm-2 offset-md-2 offset-lg-3">
 
-							<form class="bs-validate p-4 p-md-5 rounded shadow-xs" novalidate="" method="post" action="#" data-error-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Please, complete all required fields!" data-error-toast-delay="3000" data-error-toast-position="top-right">
+							<form novalidate="" action="#" method="POST" class="bs-validate p-4 p-md-5 rounded shadow-xs">
 
 
 								<!--
@@ -482,298 +482,36 @@
 
 
 								<div class="form-floating mb-3">
-									<input required="" placeholder="First Name" id="account_first_name" name="account_first_name" type="text" class="form-control">
-									<label for="account_first_name">First Name</label>
-								</div>
-
-								<div class="form-floating mb-3">
-									<input required="" placeholder="Last Name" id="account_last_name" name="account_last_name" type="text" class="form-control">
-									<label for="account_last_name">Last Name</label>
-								</div>
-
-								<div class="form-floating mb-3">
 									<input required="" placeholder="Email" id="account_email" name="account_email" type="email" class="form-control">
 									<label for="account_email">Email</label>
 								</div>
 
-								<div class="form-floating mb-3">
-									<select required="" class="form-control bs-select pt-0 pb-0 js-bselectified" data-live-search="true" data-style="select-form-control border" tabindex="null"><option value="">Select Country</option><!--!-->
-										<option>Afghanistan</option><!--!-->
-										<option>Albania</option><!--!-->
-										<option>Algeria</option><!--!-->
-										<option>Andorra</option><!--!-->
-										<option>Angola</option><!--!-->
-										<option>Antigua and Barbuda</option><!--!-->
-										<option>Argentina</option><!--!-->
-										<option>Armenia</option><!--!-->
-										<option>Australia</option><!--!-->
-										<option>Austria</option><!--!-->
-										<option>Azerbaijan</option><!--!-->
-										<option>The Bahamas</option><!--!-->
-										<option>Bahrain</option><!--!-->
-										<option>Bangladesh</option><!--!-->
-										<option>Barbados</option><!--!-->
-										<option>Belarus</option><!--!-->
-										<option>Belgium</option><!--!-->
-										<option>Belize</option><!--!-->
-										<option>Benin</option><!--!-->
-										<option>Bhutan</option><!--!-->
-										<option>Bolivia</option><!--!-->
-										<option>Bosnia and Herzegovina</option><!--!-->
-										<option>Botswana</option><!--!-->
-										<option>Brazil</option><!--!-->
-										<option>Brunei</option><!--!-->
-										<option>Bulgaria</option><!--!-->
-										<option>Burkina Faso</option><!--!-->
-										<option>Burundi</option><!--!-->
-										<option>Cambodia</option><!--!-->
-										<option>Cameroon</option><!--!-->
-										<option>Canada</option><!--!-->
-										<option>Cape Verde</option><!--!-->
-										<option>Central African Republic</option><!--!-->
-										<option>Chad</option><!--!-->
-										<option>Chile</option><!--!-->
-										<option>China</option><!--!-->
-										<option>Colombia</option><!--!-->
-										<option>Comoros</option><!--!-->
-										<option>Republic of the Congo</option><!--!-->
-										<option>Democratic Republic of the Congo</option><!--!-->
-										<option>Costa Rica</option><!--!-->
-										<option>Cote d'Ivoire</option><!--!-->
-										<option>Croatia</option><!--!-->
-										<option>Cuba</option><!--!-->
-										<option>Cyprus</option><!--!-->
-										<option>Czech Republic</option><!--!-->
-										<option>Denmark</option><!--!-->
-										<option>Djibouti</option><!--!-->
-										<option>Dominica</option><!--!-->
-										<option>Dominican Republic</option><!--!-->
-										<option>East Timor (Timor-Leste)</option><!--!-->
-										<option>Ecuador</option><!--!-->
-										<option>Egypt</option><!--!-->
-										<option>El Salvador</option><!--!-->
-										<option>Equatorial Guinea</option><!--!-->
-										<option>Eritrea</option><!--!-->
-										<option>Estonia</option><!--!-->
-										<option>Ethiopia</option><!--!-->
-										<option>Fiji</option><!--!-->
-										<option>Finland</option><!--!-->
-										<option>France</option><!--!-->
-										<option>Gabon</option><!--!-->
-										<option>The Gambia</option><!--!-->
-										<option>Georgia</option><!--!-->
-										<option>Germany</option><!--!-->
-										<option>Ghana</option><!--!-->
-										<option>Greece</option><!--!-->
-										<option>Grenada</option><!--!-->
-										<option>Guatemala</option><!--!-->
-										<option>Guinea</option><!--!-->
-										<option>Guinea-Bissau</option><!--!-->
-										<option>Guyana</option><!--!-->
-										<option>Haiti</option><!--!-->
-										<option>Honduras</option><!--!-->
-										<option>Hungary</option><!--!-->
-										<option>Iceland</option><!--!-->
-										<option>India</option><!--!-->
-										<option>Indonesia</option><!--!-->
-										<option>Iran</option><!--!-->
-										<option>Iraq</option><!--!-->
-										<option>Ireland</option><!--!-->
-										<option>Israel</option><!--!-->
-										<option>Italy</option><!--!-->
-										<option>Jamaica</option><!--!-->
-										<option>Japan</option><!--!-->
-										<option>Jordan</option><!--!-->
-										<option>Kazakhstan</option><!--!-->
-										<option>Kenya</option><!--!-->
-										<option>Kiribati</option><!--!-->
-										<option>Korea, North</option><!--!-->
-										<option>Korea, South</option><!--!-->
-										<option>Kosovo</option><!--!-->
-										<option>Kuwait</option><!--!-->
-										<option>Kyrgyzstan</option><!--!-->
-										<option>Laos</option><!--!-->
-										<option>Latvia</option><!--!-->
-										<option>Lebanon</option><!--!-->
-										<option>Lesotho</option><!--!-->
-										<option>Liberia</option><!--!-->
-										<option>Libya</option><!--!-->
-										<option>Liechtenstein</option><!--!-->
-										<option>Lithuania</option><!--!-->
-										<option>Luxembourg</option><!--!-->
-										<option>Macedonia</option><!--!-->
-										<option>Madagascar</option><!--!-->
-										<option>Malawi</option><!--!-->
-										<option>Malaysia</option><!--!-->
-										<option>Maldives</option><!--!-->
-										<option>Mali</option><!--!-->
-										<option>Malta</option><!--!-->
-										<option>Marshall Islands</option><!--!-->
-										<option>Mauritania</option><!--!-->
-										<option>Mauritius</option><!--!-->
-										<option>Mexico</option><!--!-->
-										<option>Federated States of Micronesia</option><!--!-->
-										<option>Moldova</option><!--!-->
-										<option>Monaco</option><!--!-->
-										<option>Mongolia</option><!--!-->
-										<option>Montenegro</option><!--!-->
-										<option>Morocco</option><!--!-->
-										<option>Mozambique</option><!--!-->
-										<option>Myanmar (Burma)</option><!--!-->
-										<option>Namibia</option><!--!-->
-										<option>Nauru</option><!--!-->
-										<option>Nepal</option><!--!-->
-										<option>Netherlands</option><!--!-->
-										<option>New Zealand</option><!--!-->
-										<option>Nicaragua</option><!--!-->
-										<option>Niger</option><!--!-->
-										<option>Nigeria</option><!--!-->
-										<option>Norway</option><!--!-->
-										<option>Oman</option><!--!-->
-										<option>Pakistan</option><!--!-->
-										<option>Palau</option><!--!-->
-										<option>Panama</option><!--!-->
-										<option>Papua New Guinea</option><!--!-->
-										<option>Paraguay</option><!--!-->
-										<option>Peru</option><!--!-->
-										<option>Philippines</option><!--!-->
-										<option>Poland</option><!--!-->
-										<option>Portugal</option><!--!-->
-										<option>Qatar</option><!--!-->
-										<option>Romania</option><!--!-->
-										<option>Russia</option><!--!-->
-										<option>Rwanda</option><!--!-->
-										<option>Saint Kitts and Nevis</option><!--!-->
-										<option>Saint Lucia</option><!--!-->
-										<option>Saint Vincent and the Grenadines</option><!--!-->
-										<option>Samoa</option><!--!-->
-										<option>San Marino</option><!--!-->
-										<option>Sao Tome and Principe</option><!--!-->
-										<option>Saudi Arabia</option><!--!-->
-										<option>Senegal</option><!--!-->
-										<option>Serbia</option><!--!-->
-										<option>Seychelles</option><!--!-->
-										<option>Sierra Leone</option><!--!-->
-										<option>Singapore</option><!--!-->
-										<option>Slovakia</option><!--!-->
-										<option>Slovenia</option><!--!-->
-										<option>Solomon Islands</option><!--!-->
-										<option>Somalia</option><!--!-->
-										<option>South Africa</option><!--!-->
-										<option>South Sudan</option><!--!-->
-										<option>Spain</option><!--!-->
-										<option>Sri Lanka</option><!--!-->
-										<option>Sudan</option><!--!-->
-										<option>Suriname</option><!--!-->
-										<option>Swaziland</option><!--!-->
-										<option>Sweden</option><!--!-->
-										<option>Switzerland</option><!--!-->
-										<option>Syria</option><!--!-->
-										<option>Taiwan</option><!--!-->
-										<option>Tajikistan</option><!--!-->
-										<option>Tanzania</option><!--!-->
-										<option>Thailand</option><!--!-->
-										<option>Togo</option><!--!-->
-										<option>Tonga</option><!--!-->
-										<option>Trinidad and Tobago</option><!--!-->
-										<option>Tunisia</option><!--!-->
-										<option>Turkey</option><!--!-->
-										<option>Turkmenistan</option><!--!-->
-										<option>Tuvalu</option><!--!-->
-										<option>Uganda</option><!--!-->
-										<option>Ukraine</option><!--!-->
-										<option>United Arab Emirates</option><!--!-->
-										<option>United Kingdom</option><!--!-->
-										<option>United States of America</option><!--!-->
-										<option>Uruguay</option><!--!-->
-										<option>Uzbekistan</option><!--!-->
-										<option>Vanuatu</option><!--!-->
-										<option>Vatican City (Holy See)</option><!--!-->
-										<option>Venezuela</option><!--!-->
-										<option>Vietnam</option><!--!-->
-										<option>Yemen</option><!--!-->
-										<option>Zambia</option><!--!-->
-										<option>Zimbabwe</option></select>
-								</div>
-
-								<div class="form-floating mb-3">
-									<input required="" placeholder="Phone number" id="account_phone" name="account_phone" type="number" class="form-control">
-									<label for="account_email">Phone Number</label>
-								</div>
-
 								<div class="input-group-over">
 									<div class="form-floating mb-3">
-										<input required="" placeholder="Password" id="account_password" type="password" class="form-control">
+										<input required="" placeholder="Password" id="account_password" name="account_password" type="password" class="form-control">
 										<label for="account_password">Password</label>
 									</div>
 
-									<!-- `SOW : Form Advanced` plugin used -->
-									<a href="account-simple-signin-password.html" class="btn smaller btn-password-type-toggle js-form_advanced_type_toggle" data-bs-target="#account_password">
-										<span class="group-icon">
-											<i class="fi fi-eye m-0"></i>
-											<i class="fi fi-close m-0"></i>
-										</span>
+									<a href="account-simple-signin-password.html" class="btn smaller fw-bold">
+										RESET?
 									</a>
 
 								</div>
 
-								<div class="input-group-over">
-									<div class="form-floating mb-3">
-										<input required="" placeholder="Password" id="account_password" type="password" class="form-control">
-										<label for="account_password">Confirm Password</label>
-									</div>
 
-									<!-- `SOW : Form Advanced` plugin used -->
-									<a href="account-simple-signin-password.html" class="btn smaller btn-password-type-toggle js-form_advanced_type_toggle" data-bs-target="#account_password">
-										<span class="group-icon">
-											<i class="fi fi-eye m-0"></i>
-											<i class="fi fi-close m-0"></i>
-										</span>
-									</a>
-
-								</div>
-
-								<div class="form-floating mb-3">
-									<input required="" placeholder="Project Name" id="account_project_name" name="account_project_name" type="text" class="form-control">
-									<label for="account_email">Project Name</label>
-								</div>
-
-								<div class="form-floating mb-3">
-									<input required="" placeholder="Rigister Code" id="account_rigister_code" name="account_rigister_code" type="text" class="form-control">
-									<label for="account_email">Rigister Code</label>
-								</div>
-
-								<!-- GDPR CONSENT -->
-                <div class="mb-3 border p-3 rounded">
-
-
-	                <div class="form-check bg-light p-5">
-	                  <input required="" class="form-check-input" id="contact_privacy" name="contact_privacy" type="checkbox" value="1">
-	                  <label class="form-check-label" for="contact_privacy">
-	                    I consent that my data is being stored in line with the guidelines set out in  <a class="text-decoration-none" href="privacy.html" target="_blank">Privacy Policy.</a>.
-	                  </label>
-	                </div>
-					<br>
-					<div class="form-check bg-light p-5">
-						<input required="" class="form-check-input" id="contact_offers" name="contact_offers" type="checkbox" value="1">
-						<label class="form-check-label" for="contact_offers">
-							Keep me up to date on news and exclusive offers
-						</label>
-					</div>
-
-                </div>
-								<!-- /GDPR CONSENT -->
 
 								<div class="row">
 
 									<div class="col-12 col-md-6 mt-4">
 										<button type="submit" class="btn btn-primary w-100 fw-medium">
-											Sign Up
+											Sign In
 										</button>
 									</div>
 
-									<div class="col-12 col-md-6 text-align-end text-center-xs">
-										<!-- empty -->
+									<div class="col-12 col-md-6 mt-4 text-align-end text-center-xs">
+										<a href="signup.html" class="btn px-0 link-normal">
+											Don't have an account yet?
+										</a>
 									</div>
 
 								</div>
@@ -783,7 +521,6 @@
 						</div>
 
 					</div>
-
 
 				</div>
 			</div>
@@ -905,11 +642,9 @@
 			</footer>
 			<!-- /Footer -->
 
-
-
 		</div><!-- /#wrapper -->
 
 		<script src="assets/js/core.min.js"></script>
-		
+
 	</body>
 </html>

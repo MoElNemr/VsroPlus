@@ -52,11 +52,6 @@
 
 /*price page styles*/
 
-.price-cards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 .faq-container{
     display: flex;
